@@ -1,0 +1,13 @@
+# Ejercicio 4. Huella de carbono de un desplazamiento Una empresa quiere medir el impacto de los viajes de sus empleados. El programa pide los kilómetros diarios recorridos, los días laborados al mes y el factor de emisión del vehículo (kg de CO2 por km). Calcula las emisiones mensuales y anuales, y cuántos árboles se necesitarían para compensarlas si cada árbol absorbe 22 kg de CO2 al año.
+
+#Datos a pedir
+#kilometros recorridos
+#dias laborados
+#factor_emision
+
+kms_recorridos=float(input("Digite los kms diarios recorridos del vehiculo: "))
+dias_lab=int(input("Digite los dias laborados al mes: "))
+factor_emision_vehiculo=float(input("Kms de CO2 emitidos por km (1.0 y 1.3): "))
+emisiones_mensuales=kms_recorridos * dias_lab * factor_emision_vehiculo
+emisiones_anual=emisiones_mensuales*12
+arboles=emisiones_anual/22
